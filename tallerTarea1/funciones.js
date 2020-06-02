@@ -27,4 +27,30 @@ class persona {
   }
 }
 
+function sayItOutLoud(id) {
+  const message = document.getElementById(id).value;
+
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = "es-US";
+
+  speech.text = message;
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  window.speechSynthesis.speak(speech);
+}
+
+var bolas = anime({
+  targets: "div.box",
+
+  translateX: [
+    { value: 960, duration: 1000 },
+    { value: 450, duration: 1000 },
+  ],
+  delay: anime.stagger(1000),
+
+  loop: true,
+});
+
+bolas.restart;
 var nuevo = new persona();

@@ -18,32 +18,77 @@
     <title>Document</title>
   </head>
 
-  <body>
+ 
     <br />
+    <body>
+<div class="box red"></div>
+<div class="box blue"></div>
+<div class="box yellow"></div>
+<div class="box green"></div>
+
+      
     <div class="container" id="div">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-sm" id="divuno">
           <p>Login</p>
-          <form action="#">
+          <form action="#"></form>
+
             <p>Usuario</p>
-            <input type="text" name="Usuario" id="Usuarios" />
+            <input type="text" class="form-control" name="Usuario" id="Usuarios" />
+
+         
             <p>Contraseña</p>
-            <input type="password" name="Contraseña" id="Contrasenas" />
+            <input type="password" class="form-control" name="Contraseña" id="Contrasenas" />
             <br />
             <br />
             <button
               id="boton"
               type="button"
-              class="persona"
+              class="btn btn-dark"
               onclick="nuevo.obtener();"
             >
               INGRESAR
-            </button>
-          </form>
-        </div>
-      </div>
+            </button>         
     </div>
+
+        <div class="col-sm" id="divdos">
+          <br>
+          <input placeholder="Texto a decir..." type="text" class="form-control" name="" id="say-input">
+          <br>
+          <button class="btn btn-dark" onclick="sayItOutLoud('say-input')" > REPRODUCIR </button>
+        </div>
+        </div>
+        </div>
+
+
+        </form>
+
+
+        <br>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/cicadaeditada.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/techos_imagen2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js"></script>
+        <script>$('.carousel').carousel()</script>
   </body>
+  
   <script type="text/javascript" src="funciones.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
