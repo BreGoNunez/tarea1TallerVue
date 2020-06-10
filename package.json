@@ -1,0 +1,25 @@
+{
+  "name": "tarea1tallervue",
+  "version": "1.0.0",
+  "description": "Desarrollo de tareas de taller Vue",
+  "main": "funciones.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreGoNunez/tarea1TallerVue.git"
+  },
+  "author": "Brénedin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BreGoNunez/tarea1TallerVue/issues"
+  },
+  "homepage": "https://github.com/BreGoNunez/tarea1TallerVue#readme",
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.0"
+  }
+}
